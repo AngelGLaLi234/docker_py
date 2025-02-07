@@ -1,5 +1,3 @@
-sudo delete web service docker_pFROM python:3.9.2
-
 WORKDIR /app
 
 COPY . .
