@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Angelito, desarrollador web apasionado por la creatividad digital. Descubre sus proyectos, habilidades y formas de contacto.">
+    <meta name="keywords" content="Portafolio, Desarrollo Web, Angelito, Proyectos, Habilidades, Contacto">
+    <meta name="author" content="Angelito">
+    <title>Portafolio de Angelito</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased" onload="AOS.init();">
+
+<header class="bg-gradient-to-r from-blue-600 to-blue-800 py-6 shadow-xl border-b-4 border-blue-400">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+        <div class="text-center md:text-left">
+            <h1 class="text-4xl font-extrabold text-white">Bienvenido a mi Portafolio</h1>
+            <p class="text-gray-300 italic">Explora mis proyectos y conoce más sobre mí.</p>
+        </div>
+        <nav class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mt-4 md:mt-0 text-center">
+            <a href="#about" class="text-white hover:text-blue-300 font-semibold transition-colors">Sobre mí</a>
+            <a href="#projects" class="text-white hover:text-blue-300 font-semibold transition-colors">Proyectos</a>
+            <a href="#skills" class="text-white hover:text-blue-300 font-semibold transition-colors">Habilidades</a>
+            <a href="#contact" class="text-white hover:text-blue-300 font-semibold transition-colors">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<main class="py-16 space-y-20">
+    <section id="about" class="text-center px-6">
+        <img src="{{ url_for('static', filename='images.foto.png') }}" alt="Foto de Angelito" class="rounded-full shadow-lg border-4 border-blue-500 mx-auto hover:scale-110 transition-transform duration-300">
+        <h2 class="mt-6 text-5xl font-extrabold text-blue-400" data-aos="fade-up">Angel Gabriel Lazo Lino</h2>
+        <p class="mt-4 text-lg text-gray-300 italic" data-aos="fade-up" data-aos-delay="100">Apasionado por el desarrollo web y la creatividad digital.</p>
+        <p class="mt-2 text-gray-400 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Con más de 1 año de experiencia desarrollando aplicaciones web modernas y escalables, me especializo en la creación de experiencias digitales únicas para cualquier tipo de empresa o emprendimiento.</p>
+    </section>
+
+    <section id="skills" class="bg-gray-800 py-12">
+        <h2 class="text-4xl font-bold text-blue-400 text-center" data-aos="fade-right">Habilidades</h2>
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+            <div class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
+                <p>HTML5</p>
+            </div>
+            <div class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
+                <p>CSS3</p>
+            </div>
+            <div class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
+                <p>JavaScript</p>
+            </div>
+            <div class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
+                <p>React</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="text-center py-12">
+        <h2 class="text-4xl font-bold text-blue-400" data-aos="fade-left">Proyectos Destacados</h2>
+        <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="p-6 bg-gray-800 rounded-lg shadow-lg border-2 border-blue-400 hover:shadow-2xl transition-shadow duration-300 card" data-aos="flip-up">
+                <h3 class="text-2xl font-semibold text-blue-400">Tienda Virtual</h3>
+                <p class="mt-4 text-gray-300">Una plataforma completa para la gestión de ventas en línea.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-800 py-12">
+        <h2 class="text-4xl font-bold text-blue-400 text-center" data-aos="fade-right">Contacto</h2>
+        <div class="mt-8 text-center text-gray-300" data-aos="fade-up">
+            <p>Puedes contactarme a través de los siguientes medios:</p>
+            <div class="mt-4 space-y-2">
+                <p><strong>Teléfono:</strong> <a href="tel:+51914196497" class="text-blue-400 hover:text-blue-300">914196497</a> / <a href="tel:+51900454720" class="text-blue-400 hover:text-blue-300">900454720</a></p>
+                <p><strong>Correo electrónico:</strong> <a href="mailto:angelgll234@hotmail.com" class="text-blue-400 hover:text-blue-300">angelgll234@hotmail.com</a> / <a href="mailto:i2311846@continental.edu.pe" class="text-blue-400 hover:text-blue-300">i2311846@continental.edu.pe</a></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-900 py-6 text-center text-gray-300">
+    <div class="flex justify-center space-x-12">
+        <div>
+            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors" aria-label="LinkedIn">
+                <svg class="w-10 h-10 mx-auto" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM7.25 8H11v2.34c.69-1.18 2.44-2.34 5.02-2.34C21 8 24 10.91 24 15.54V24h-5v-8.95c0-2.15-1.18-3.54-3.05-3.54-1.86 0-2.65 1.29-2.65 3.54V24h-5V8z"/>
+                </svg>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors" aria-label="GitHub">
+                <svg class="w-10 h-10 mx-auto" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.63.07-.62.07-.62 1 .07 1.53 1.02 1.53 1.02.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.02-2.69-.1-.26-.45-1.3.1-2.71 0 0 .83-.27 2.73 1.02A9.52 9.52 0 0112 6.8a9.56 9.56 0 012.48.34c1.9-1.29 2.73-1.02 2.73-1.02.55 1.41.2 2.45.1 2.71.63.7 1.02 1.6 1.02 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.93.68 1.87 0 1.35-.01 2.44-.01 2.78 0 .26.18.57.69.48A10 10 0 0012 2z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <p class="mt-6">© 2024 Angelito. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
